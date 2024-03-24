@@ -101,7 +101,6 @@ export function HeaderMegaMenu() {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          {/* <MantineLogo size={30} /> */}
           <Title>Pubspin</Title>
 
           <Group h="100%" gap={0} visibleFrom="sm">
