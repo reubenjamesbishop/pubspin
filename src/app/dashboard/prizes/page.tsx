@@ -2,19 +2,7 @@ import { Stack, Title, Group, Button, TextInput, rem } from "@mantine/core";
 import { IconPlus, IconSearch } from "@tabler/icons-react";
 import PrizesTable from "./components/PrizesTable";
 
-// async function getData() {
-//   const res = await fetch("http://localhost:3000/api/get-prizes?pubID=1");
-//   if (!res.ok) {
-//     throw new Error("Failed to fetch data");
-//   }
-
-//   return res.json();
-// }
-
 export default async function Prizes() {
-  // const { prizes } = await getData();
-  // console.log(prizes.rows);
-  // const data = prizes.rows;
   const data = MOCK_PRIZE_DATA;
 
   return (

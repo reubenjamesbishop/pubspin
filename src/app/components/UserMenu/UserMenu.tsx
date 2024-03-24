@@ -1,3 +1,7 @@
+"use client";
+
+import { createClient } from "../../utils/supabase/client";
+
 import {
   Menu,
   Group,
@@ -19,7 +23,15 @@ import {
 } from "@tabler/icons-react";
 
 export function UserMenu() {
+  const supabase = createClient();
   const theme = useMantineTheme();
+
+  async function handleSignout() {
+    alert("signing out");
+    const { error } = await supabase.auth.signOut();
+    // TODO: Fix delay. I think it stays logged in b/c JWT is still valid until it's expired.
+  }
+
   return (
     <Group justify="center">
       <Menu
@@ -102,6 +114,7 @@ export function UserMenu() {
             Change account
           </Menu.Item>
           <Menu.Item
+            onClick={handleSignout}
             leftSection={
               <IconLogout
                 style={{ width: rem(16), height: rem(16) }}

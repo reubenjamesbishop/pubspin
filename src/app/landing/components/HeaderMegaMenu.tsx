@@ -166,10 +166,10 @@ export function HeaderMegaMenu() {
           </Group>
 
           <Group visibleFrom="sm">
-            <Button variant="default" onClick={() => router.push("/dashboard")}>
+            <Button variant="default" onClick={() => router.push("/login")}>
               Log in
             </Button>
-            <Button>Sign up</Button>
+            <Button onClick={() => router.push("/login")}>Sign up</Button>
           </Group>
 
           <Burger
