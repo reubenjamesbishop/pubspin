@@ -1,3 +1,9 @@
+"use client";
+
+import { FaqSimple } from "./landing/components/FaqSimple";
+import { FeaturesGrid } from "./landing/components/FeaturesGrid";
+import { FooterLinks } from "./landing/components/FooterLinks";
+import { GetInTouchSimple } from "./landing/components/GetInTouchSimple";
 import { HeaderMegaMenu } from "./landing/components/HeaderMegaMenu";
 import { HeroBullets } from "./landing/components/HeroBullets";
 
@@ -8,6 +14,10 @@ export default function Home() {
     <>
       <HeaderMegaMenu />
       <HeroBullets />
+      <FeaturesGrid />
+      <FaqSimple />
+      <GetInTouchSimple />
+      <FooterLinks />
     </>
   );
 }
