@@ -13,6 +13,8 @@ import {
   TextInput,
   Group,
   Image,
+  Indicator,
+  Center,
 } from "@mantine/core";
 
 import { Prize } from "../types";
@@ -44,7 +46,7 @@ export default function PrizesTable() {
       prize_id: 2,
       name: "Free Dessert",
       description: "Enjoy a complimentary dessert with your meal",
-      status: "Available",
+      status: "Paused",
       date_added: "2024-03-20",
       payout_frequency: "One-time",
       avatar:
@@ -244,7 +246,27 @@ export default function PrizesTable() {
           </Text>
         </Stack>
       </Table.Td>
-      <Table.Td>{row.status}</Table.Td>
+      <Table.Td>
+        {row.status === "Available" ? (
+          <>
+            <Center
+              style={{ border: "0px solid red", justifyContent: "start" }}
+            >
+              <Indicator processing color="green" />
+              <Text size="xs" c="darkgreen" ml={15}>
+                live
+              </Text>
+            </Center>
+          </>
+        ) : (
+          <Center style={{ border: "0px solid red", justifyContent: "start" }}>
+            <Indicator color="grey" />
+            <Text size="xs" c="grey" ml={15}>
+              paused
+            </Text>
+          </Center>
+        )}
+      </Table.Td>
       <Table.Td>{row.date_added}</Table.Td>
       <Table.Td>{row.payout_frequency}</Table.Td>
     </Table.Tr>

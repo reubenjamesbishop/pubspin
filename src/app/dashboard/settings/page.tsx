@@ -8,7 +8,6 @@ import {
   Tabs,
   rem,
   Divider,
-  Group,
   Text,
   Grid,
   TextInput,
