@@ -48,7 +48,7 @@ export default function Spin() {
 
           {prize !== null ? (
             <>
-              <Text size="sm">You've won...</Text>
+              <Text size="sm">Youve won...</Text>
               <Text size={"30px"} fw={700}>
                 a {prize}!
               </Text>
