@@ -14,7 +14,7 @@ export default function QRSummary(props: QRSummaryProps) {
         value="https://pubspin.vercel.app/spin"
         size={300}
         quietZone={0}
-        logoImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmHkm4rT1FxpREhje0zCXq7vi4cEWz9K2H1ZBoA1H1768SIuMKT2qOypb7OLYwiR1Nww&usqp=CAU"
+        // logoImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmHkm4rT1FxpREhje0zCXq7vi4cEWz9K2H1ZBoA1H1768SIuMKT2qOypb7OLYwiR1Nww&usqp=CAU"
         logoWidth={100}
         eyeColor={props.brandColor}
         eyeRadius={0}
