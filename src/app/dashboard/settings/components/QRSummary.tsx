@@ -11,7 +11,7 @@ export default function QRSummary(props: QRSummaryProps) {
     <Stack style={{ border: "0px solid red" }}>
       <Title>My PubSpin QR Code</Title>
       <QRCode
-        value="http://localhost:5173/spin/saracens"
+        value="https://pubspin.vercel.app/spin"
         size={300}
         quietZone={0}
         logoImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmHkm4rT1FxpREhje0zCXq7vi4cEWz9K2H1ZBoA1H1768SIuMKT2qOypb7OLYwiR1Nww&usqp=CAU"
